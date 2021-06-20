@@ -1,4 +1,9 @@
 <?php
+
+$marca = $_POST ['marca'];
+$modelo = $_POST ['modelo'];
+$Ano = $_POST ['Ano'];
+
 $servername = "bmlx3df4ma7r1yh4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 $username = "aglf3ti6qluckw2n";
 $password = "i9cni1mpbh5sj6f3";
@@ -8,7 +13,7 @@ try {
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "INSERT INTO carros (id, marca, modelo, ano) 
-  VALUES (' ', 'Chevrolet', 'Chevrolet SPIN','2019 ')";
+  VALUES (' ','$marca ', ' $modelo','$Ano ')";
   // use exec() because no results are returned
   $conn->exec($sql);
   echo "carro cadastrado";
