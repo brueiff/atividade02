@@ -8,7 +8,7 @@ try {
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "INSERT INTO carros (id, marca, modelo, ano) 
-  VALUES (' ', 'FIAT', 'FIAT UNO','2019 ')";
+  VALUES (' ', 'Chevrolet', 'Chevrolet SPIN','2019 ')";
   // use exec() because no results are returned
   $conn->exec($sql);
   echo "carro cadastrado";

@@ -5,11 +5,11 @@ $password = "i9cni1mpbh5sj6f3";
 $dbname    = "gax8bwmolpkjt36e";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $sql = "UPDATE carros SET modelo='Doe' WHERE id=2";
+  $sql = "UPDATE carros SET modelo='Chevrolet' WHERE id=2";
 
   // Prepare statement
   $stmt = $conn->prepare($sql);
