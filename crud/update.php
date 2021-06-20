@@ -18,7 +18,7 @@ try {
   $stmt->execute();
 
   // echo a message to say the UPDATE succeeded
-  echo $stmt->rowCount() . " records UPDATED successfully";
+  echo $stmt->rowCount() . " carro atualizado";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }

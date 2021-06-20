@@ -8,11 +8,13 @@
 </head>
 <body>
  
- <h3>ola</h3>
+ <h3>backend</h3>
  <a href="crud/create.php">create</a>
  <a href="crud/read.php">read</a>
  <a href="crud/update.php">update</a>
  <a href="crud/delete.php">delete</a>
+
+ <h3>frontend</h3>
  
  
  
