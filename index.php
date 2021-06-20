@@ -8,13 +8,13 @@
 </head>
 <body>
  
- <?php
+ 
  <a href="crud/create.php">create</a>
  <a href="crud/read.php">read</a>
  <a href="crud/update.php">update</a>
  <a href="crud/delete.php">delete</a>
  
  
- ?> 
+ 
 </body>
 </html>
